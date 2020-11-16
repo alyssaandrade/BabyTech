@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BabyTech.MainPage">
+
+    
+    <StackLayout BackgroundColor="White" Padding="60" VerticalOptions="Center">
+        
+        
+
+        <Label Text="BabyTech" FontAttributes="Bold, Italic" FontSize="Large"></Label>
+        <Button Text="Login" BackgroundColor="Gray" Clicked="LoginButton_OnClicked">
+        </Button>
+        <Button Text="Sign Up" BackgroundColor="Gray" Clicked="SignUpButton_OnClicked">
+        </Button>
+    </StackLayout>
+    
+           
+        
+
+</ContentPage>

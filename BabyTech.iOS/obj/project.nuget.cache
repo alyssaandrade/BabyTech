@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "oeXNdTdbOb8voSTQr0L7F//xKBxkykb3tK5HxsRlBcJccU6fMr+vOQE/3N5+DRFzrjfC5hXWwPWceMcwiA+1OA==",
+  "success": true,
+  "projectFilePath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech.iOS/BabyTech.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/alyssaandrade/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/alyssaandrade/.nuget/packages/xamarin.forms/4.6.0.1141/xamarin.forms.4.6.0.1141.nupkg.sha512"
+  ],
+  "logs": []
+}

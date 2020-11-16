@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BabyTech.Pages.InfoPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Family Medical History">
+             
+                <Entry Placeholder="Any complications during birth"></Entry>
+                <Entry Placeholder="Family history of genetic disorders"></Entry>
+                <Entry Placeholder="Family history of chromosomal abnormatlities"></Entry>
+                <Entry Placeholder="Any medical issues among siblings"></Entry>
+                <Entry Placeholder="Medical issues among family"></Entry>
+                <Entry Placeholder="History of medical surgeries"></Entry>
+                <Entry Placeholder="Does the child have any allergies"></Entry>
+                <Entry Placeholder="Mother over the age  of 35"></Entry>
+                <Entry Placeholder="Father over the age  of 40"></Entry>
+                <Entry Placeholder="Previous history of miscarrige"></Entry>
+                <Entry Placeholder="Exposure to toxic chemicals/ x-rays"></Entry>
+                <Entry Placeholder="Drug or alcohol history"></Entry>
+                <Entry Placeholder="Diabetes during pregnancy"></Entry>
+                <Entry Placeholder="Has every taken isotretinoin or accutane"></Entry>
+            </StackLayout>
+            
+            
+            <Button Text="NEXT"></Button>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

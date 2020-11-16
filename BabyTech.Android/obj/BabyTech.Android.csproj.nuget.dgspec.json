@@ -1,0 +1,113 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech.Android/BabyTech.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech.Android/BabyTech.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech.Android/BabyTech.Android.csproj",
+        "projectName": "BabyTech.Android",
+        "projectPath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech.Android/BabyTech.Android.csproj",
+        "packagesPath": "/Users/alyssaandrade/.nuget/packages/",
+        "outputPath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/alyssaandrade/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/BabyTech.csproj": {
+                "projectPath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/BabyTech.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.6.0.1141, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/BabyTech.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/BabyTech.csproj",
+        "projectName": "BabyTech",
+        "projectPath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/BabyTech.csproj",
+        "packagesPath": "/Users/alyssaandrade/.nuget/packages/",
+        "outputPath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/alyssaandrade/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.6.0.1141, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
