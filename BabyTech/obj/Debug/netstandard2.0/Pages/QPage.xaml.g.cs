@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("BabyTech.Pages.QPage.xaml", "Pages/QPage.xaml", typeof(global::BabyTech.Pages.SignUpPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("BabyTech.Pages.QPage.xaml", "Pages/QPage.xaml", typeof(global::BabyTech.Pages.QPage))]
 
 namespace BabyTech.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages/QPage.xaml")]
-    public partial class SignUpPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\QPage.xaml")]
+    public partial class QPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SignUpPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(QPage));
         }
     }
 }

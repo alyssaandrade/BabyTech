@@ -978,32 +978,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/alyssaandrade/.nuget/packages/": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech.iOS/BabyTech.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\BabyTech\\BabyTech.iOS\\BabyTech.iOS.csproj",
       "projectName": "BabyTech.iOS",
-      "projectPath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech.iOS/BabyTech.iOS.csproj",
-      "packagesPath": "/Users/alyssaandrade/.nuget/packages/",
-      "outputPath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech.iOS/obj/",
+      "projectPath": "C:\\Users\\User\\source\\repos\\BabyTech\\BabyTech.iOS\\BabyTech.iOS.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\BabyTech\\BabyTech.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/alyssaandrade/.config/NuGet/NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/BabyTech.csproj": {
-              "projectPath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/BabyTech.csproj"
+            "C:\\Users\\User\\source\\repos\\BabyTech\\BabyTech\\BabyTech.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\BabyTech\\BabyTech\\BabyTech.csproj"
             }
           }
         }

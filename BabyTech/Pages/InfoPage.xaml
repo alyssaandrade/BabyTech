@@ -1,5 +1,43 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BabyTech.Pages.MyPage">
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BabyTech.Pages.InfoPage">
     <ContentPage.Content>
+        <ScrollView>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Family Medical History" />
+                <Label Text="Any complications during birth"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Family history of genetic disorders"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Family history of chromosomal abnormatlities"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Any medical issues among siblings"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Medical issues among family"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="History of medical surgeries"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Does the child have any allergies"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Mother over the age  of 35"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Father over the age  of 40"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Previous history of miscarrige"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Exposure to toxic chemicals/ x-rays"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Drug or alcohol history"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Diabetes during pregnancy"></Label>
+                    <Switch IsToggled="true"/>
+                    <Label Text="Has every taken isotretinoin or accutane"></Label>
+                    <Switch IsToggled="true"/>
+                </StackLayout>
+            <Button Text="NEXT" Clicked="OnNextButtonClicked"></Button>
+        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

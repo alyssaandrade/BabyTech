@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("BabyTech.Pages.InfoPage.xaml", "Pages/InfoPage.xaml", typeof(global::BabyTech.Pages.MyPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("BabyTech.Pages.InfoPage.xaml", "Pages/InfoPage.xaml", typeof(global::BabyTech.Pages.InfoPage))]
 
 namespace BabyTech.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages/InfoPage.xaml")]
-    public partial class MyPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\InfoPage.xaml")]
+    public partial class InfoPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MyPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(InfoPage));
         }
     }
 }

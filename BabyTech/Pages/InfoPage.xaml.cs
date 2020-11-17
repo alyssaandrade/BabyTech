@@ -5,11 +5,16 @@ using Xamarin.Forms;
 
 namespace BabyTech.Pages
 {
-    public partial class MyPage : ContentPage
+    public partial class InfoPage : ContentPage
     {
-        public MyPage()
+        public InfoPage()
         {
             InitializeComponent();
+        }
+
+        async void OnNextButtonClicked(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new QPage());
         }
     }
 }

@@ -9,8 +9,8 @@ namespace BabyTech.ViewModels
 {
     public class LoginViewModel : INotifyPropertyChanged
     {
-        public Action DisplayInvalidLoginPrompt;
-        public Action DisplayCorrectLoginPrompt;
+        public Action DisplayInvalidLogin;
+        public Action DisplayCorrectLogin;
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
 
         private string email;
@@ -57,11 +57,11 @@ namespace BabyTech.ViewModels
         {
             if (email != "choe@gwu.edu" || password != "capstone")
             {
-                DisplayInvalidLoginPrompt();
+                DisplayInvalidLogin();
             } 
             else
             {
-                DisplayCorrectLoginPrompt();
+                DisplayCorrectLogin();
             }
         }
     }

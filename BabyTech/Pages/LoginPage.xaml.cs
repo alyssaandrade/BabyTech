@@ -18,8 +18,8 @@ namespace BabyTech.Pages
         {
             var vm = new LoginViewModel();
             this.BindingContext = vm;
-            vm.DisplayInvalidLoginPrompt += () => DisplayAlert("Error", "Invalid Login, please try again", "OK");
-            vm.DisplayCorrectLoginPrompt += () => DisplayAlert("Correct!", "You're logged in!", "OK");
+            vm.DisplayInvalidLogin += () => DisplayAlert("Error", "Invalid Login, please try again", "OK");
+            vm.DisplayCorrectLogin += () => Navigation.PushAsync(new InfoPage());
             InitializeComponent();
 
             Email.Completed += (object sender, EventArgs e) =>

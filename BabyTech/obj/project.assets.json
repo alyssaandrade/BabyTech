@@ -628,24 +628,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/alyssaandrade/.nuget/packages/": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/BabyTech.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\BabyTech\\BabyTech\\BabyTech.csproj",
       "projectName": "BabyTech",
-      "projectPath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/BabyTech.csproj",
-      "packagesPath": "/Users/alyssaandrade/.nuget/packages/",
-      "outputPath": "/Users/alyssaandrade/Desktop/BabyTech-master/BabyTech/obj/",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\BabyTech\\BabyTech\\BabyTech.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\BabyTech\\BabyTech\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/alyssaandrade/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -687,7 +694,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
