@@ -3,15 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BabyTech.MainPage">
 
-    
-    <StackLayout BackgroundColor="White" Padding="60" VerticalOptions="Center">
-        
-        
 
-        <Label Text="BabyTech" FontAttributes="Bold, Italic" FontSize="Large"></Label>
-        <Button Text="Login" BackgroundColor="Gray" Clicked="LoginButton_OnClicked">
+    <StackLayout BackgroundColor="White" Padding="60" VerticalOptions="Center">
+        <Label Text="BabyTech" FontSize="30" TextColor="#00C5FA" />
+        <Image Source="logo.jpg" />
+        <Button Text="Login" BackgroundColor="#00C5FA" TextColor="#FFF" FontSize="18" Clicked="LoginButton_OnClicked">
         </Button>
-        <Button Text="Sign Up" BackgroundColor="Gray" Clicked="SignUpButton_OnClicked">
+        <Button Text="Sign Up" BackgroundColor="#00C5FA" TextColor="#FFF" FontSize="18" Clicked="SignUpButton_OnClicked">
         </Button>
     </StackLayout>
     

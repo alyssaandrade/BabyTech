@@ -12,5 +12,6 @@ namespace BabyTech.Pages
             InitializeComponent();
         }
 
+        private async void RegisterCase_Clicked(object sender, EventArgs e) => await Navigation.PushAsync(new InfoPage());
     }
 }

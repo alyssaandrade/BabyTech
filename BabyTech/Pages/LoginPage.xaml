@@ -19,7 +19,7 @@
             </Frame>
             <Button Command="{Binding SubmitCommand}" Text="Login" TextColor="White"  
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
-                    BackgroundColor="#088da5" />
+                    BackgroundColor="#00C5FA" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

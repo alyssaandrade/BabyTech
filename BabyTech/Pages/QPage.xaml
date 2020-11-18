@@ -4,18 +4,25 @@
              x:Class="BabyTech.Pages.QPage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+            <Label Text="Patient Information" FontSize="25" TextColor="#00C5FA"></Label>
             <StackLayout Orientation="Horizontal">
                 <Entry Placeholder="First Name"></Entry>
                 <Entry Placeholder="Last Name"></Entry>
             </StackLayout>
-            <Entry Placeholder="Email"></Entry>
-            <Entry Placeholder="Healthcare Company"></Entry>
-            <Entry Placeholder="Profession"></Entry>
-            <Entry Placeholder="Nation"></Entry>
-            <Entry Placeholder="Password" IsPassword="True"></Entry>
-            <Entry Placeholder="Confirm Password" IsPassword="True"></Entry>
-            <Button Text="Sign Up"></Button>
-            <Label Text="Already have account? Sign In" TextColor="Blue"></Label>
+            <Entry Placeholder="Street Address"></Entry>
+            <Entry Placeholder="City"></Entry>
+            <Entry Placeholder="State"></Entry>
+            <Entry Placeholder="Country"></Entry>
+            <Entry Placeholder="Hospital Name"></Entry>
+            <Editor Placeholder="Write any observations..."></Editor>
+                <Picker>
+                <Picker.Items SelectedIndex="0">
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                    <x:String>Other</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Register Case" BackgroundColor="#00C5FA" TextColor="#FFF" Clicked="RegisterCase_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

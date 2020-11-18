@@ -6,37 +6,37 @@
         <ScrollView>
         <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
             <StackLayout Orientation="Vertical">
-                <Label Text="Family Medical History" />
-                <Label Text="Any complications during birth"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Family history of genetic disorders"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Family history of chromosomal abnormatlities"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Any medical issues among siblings"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Medical issues among family"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="History of medical surgeries"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Does the child have any allergies"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Mother over the age  of 35"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Father over the age  of 40"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Previous history of miscarrige"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Exposure to toxic chemicals/ x-rays"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Drug or alcohol history"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Diabetes during pregnancy"></Label>
-                    <Switch IsToggled="true"/>
-                    <Label Text="Has every taken isotretinoin or accutane"></Label>
-                    <Switch IsToggled="true"/>
+                    <Label Text="Family Medical History" FontSize="25" TextColor="#00C5FA" />
+                    <Label Text="Any complications during birth" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Family history of genetic disorders" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Family history of chromosomal abnormatlities" FontSize="18"></Label>
+                    <Switch IsToggled="False"/>
+                    <Label Text="Any medical issues among siblings" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Medical issues among family" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="History of medical surgeries" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Does the child have any allergies" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Mother over the age of 35" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Father over the age of 40" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Previous history of miscarraige" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Exposure to toxic chemicals/ x-rays" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Drug or alcohol history" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Diabetes during pregnancy" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
+                    <Label Text="Has every taken isotretinoin or accutane" FontSize="18"></Label>
+                    <Switch IsToggled="false"/>
                 </StackLayout>
-            <Button Text="NEXT" Clicked="OnNextButtonClicked"></Button>
+                <Button Text="NEXT" Clicked="OnNextButtonClicked" BackgroundColor="#00C5FA" TextColor="#FFF"></Button>
         </StackLayout>
         </ScrollView>
     </ContentPage.Content>
