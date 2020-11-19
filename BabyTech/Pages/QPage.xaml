@@ -15,8 +15,8 @@
             <Entry Placeholder="Country"></Entry>
             <Entry Placeholder="Hospital Name"></Entry>
             <Editor Placeholder="Write any observations..."></Editor>
-                <Picker>
-                <Picker.Items SelectedIndex="0">
+                <Picker Title="Select gender...">
+                <Picker.Items>
                     <x:String>Male</x:String>
                     <x:String>Female</x:String>
                     <x:String>Other</x:String>
