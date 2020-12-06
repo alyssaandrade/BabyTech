@@ -14,7 +14,7 @@ namespace BabyTech.Pages
 
         async void OnNextButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new QPage());
+            await Navigation.PushAsync(new TakePhoto());
         }
     }
 }
