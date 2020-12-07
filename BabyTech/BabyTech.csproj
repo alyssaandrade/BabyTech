@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,6 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AWSSDK.CognitoIdentity" Version="3.5.1.6" />
+    <PackageReference Include="AWSSDK.Core" Version="3.5.1.46" />
+    <PackageReference Include="AWSSDK.Rekognition" Version="3.5.2.19" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.1709-pre4" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.0-pre5" />
   </ItemGroup>
