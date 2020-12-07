@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BabyTech.Pages.TakePhoto">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button Text="Pick Image" Clicked="PickImage_Clicked" />
+                <Button Text="Take Image" Clicked="TakeImage_Clicked" />
+                <Button Text="Analyze Photo" Clicked="Analyze_Clicked" />
+                <Image x:Name="resultImage" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
