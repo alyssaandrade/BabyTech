@@ -16,6 +16,9 @@ namespace BabyTech.Pages
     public partial class TakePhoto : ContentPage
     {
 
+        private const string AWSAccessKeyID = "";
+        private const string AWSSecretAccessKey = "";
+
         private string facialAnalysisData;
         public string FacialAnalysisData
         {
@@ -34,6 +37,7 @@ namespace BabyTech.Pages
 
         async void PickImage_Clicked(System.Object sender, System.EventArgs e)
         {
+
             var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
             {
                 Title = "Please pick a photo"
@@ -62,7 +66,7 @@ namespace BabyTech.Pages
         async void Analyze_Clicked(System.Object sender, System.EventArgs e)
         {
 
-            AmazonRekognitionClient rekognitionClient = new AmazonRekognitionClient("", "", Amazon.RegionEndpoint.USEast1);
+            AmazonRekognitionClient rekognitionClient = new AmazonRekognitionClient(AWSAccessKeyID, AWSSecretAccessKey, Amazon.RegionEndpoint.USEast1);
 
             DetectFacesRequest detectFacesRequest = new DetectFacesRequest()
             {
@@ -70,24 +74,45 @@ namespace BabyTech.Pages
                 {
                     S3Object = new S3Object
                     {
-                        Bucket = "bucket-name",
-                        Name = "filename.jpg"
+                        Bucket = "babytech-images",
+                        Name = "baby-eyes-mouth-open.jpg"
                     }
                 },
+                Attributes = new List<String>() { "ALL" }
             };
 
             try
             {
                 DetectFacesResponse detectFacesResponse = await rekognitionClient.DetectFacesAsync(detectFacesRequest);
-                bool hasAll = detectFacesRequest.Attributes.Contains("ALL");
+
                 foreach (FaceDetail face in detectFacesResponse.FaceDetails)
                 {
-                    FacialAnalysisData += String.Format("Confidence: {0}\nLandmarks: {1}\nPose: pitch={2} roll={3} yaw={4}\nQuality: {5}",
-                        face.Confidence, face.Landmarks.Count, face.Pose.Pitch,
-                        face.Pose.Roll, face.Pose.Yaw, face.Quality);
 
-                    Console.WriteLine(FacialAnalysisData);
+                    const float confidence_threshold = 0.8F;
+
+                    // check if mouth is open
+                    if ((face.MouthOpen != null) && (face.MouthOpen.Confidence > confidence_threshold))
+                    {
+                        FacialAnalysisData += (face.MouthOpen.Value) ? "\n✔ Baby's mouth is open." : "\n❌ Baby's mouth is not open.";  
+                    }
+                    else
+                    {
+                        FacialAnalysisData += "\n❌ Unable to determine if baby's mouth is open.";
+                    }
+
+                    // check if eyes are open
+                    if ((face.EyesOpen != null) && (face.EyesOpen.Confidence > confidence_threshold))
+                    {
+                        FacialAnalysisData += (face.EyesOpen.Value) ? "\n✔ Baby's eyes are open." : "\n❌ Baby's eyes are not open.";
+                    }
+                    else
+                    {
+                        FacialAnalysisData += "\n❌ Unable to determine if baby's eyes are open.";
+                    }
+
                 }
+
+                DisplayAlert("Analysis Results", FacialAnalysisData, "OK");
             }
             catch (Exception exception)
             {
